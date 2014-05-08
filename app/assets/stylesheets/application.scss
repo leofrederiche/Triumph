@@ -1,20 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
 body{
   margin: 0;
-}
-
-section{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: image-url("background1.jpg");
-  background-size: cover;
-  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav{
   margin: 0;
   position: absolute;
-  top: -19px;
+  top: -5px;
   text-align: center;
   left: 25%;
 }
@@ -44,12 +38,12 @@ li:hover{
 }
 
 #post{
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  width: 90%;
-  height: 80%;
-  left: 5%;
-  top: 10%;
-  color: white;
-  text-indent: 10px;
+  width: 78%;
+  position: relative;
+  margin: 0 auto;
+}
+
+header{
+  color: rgba(0,0,0,0.6);
+  text-align: center;
 }
