@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  price: 1.5
+  mark: MyString
+  model: MyString
+  door: 1
+  glass: false
+  fuel: MyString
+  transmission: MyString
+  clutch: 1
+  engine: MyString
+  color: MyString
+  air: false
+
+two:
+  price: 1.5
+  mark: MyString
+  model: MyString
+  door: 1
+  glass: false
+  fuel: MyString
+  transmission: MyString
+  clutch: 1
+  engine: MyString
+  color: MyString
+  air: false

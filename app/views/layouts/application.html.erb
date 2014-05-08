@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triumph</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Carros</li>
+      <li>Informação</li>
+      <li>Lojas</li>
+    </ul>
+  </nav>
+
+  <div id="icons">
+    <%= image_tag "logo.png", id: "logo" %>
+  </div>
+</section>
+
+  <%= yield %>
+
+</body>
+</html>

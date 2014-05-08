@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name_client: MyString
+  RG: 1
+  CPF: 1
+  salary: 1
+  email: MyString
+  tel: 1
+  plots: 1.5
+  amount_plots: 1
+  price: MyString
+  interest: 1.5
+
+two:
+  name_client: MyString
+  RG: 1
+  CPF: 1
+  salary: 1
+  email: MyString
+  tel: 1
+  plots: 1.5
+  amount_plots: 1
+  price: MyString
+  interest: 1.5
