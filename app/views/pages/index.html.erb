@@ -1,12 +1,49 @@
- <h1>Lançamentos</h1>
- <p>
-   Post messages, pictures.
- </p>
- <p>
-   (Last car of DB)
- </p>
+ <div id="left">
+   <h1>Lançamentos</h1>
 
- <h1>Promoções</h1>
- <p>
-   Post messages, pictures.
- </p>
+   <h3><%= "#{@last_car.mark} - #{@last_car.model}" %></h3>
+   <p id="info">
+      Novo <%= @last_car.model %> com <%= @last_car.door %> portas,
+      motor <%= @last_car.engine %>, vidros, portas e travas elétricas, disponivel
+      na(s) cor(es) <%= @last_car.color %>.
+
+      <%= image_tag "#{@last_car.model}.png", width: "300px", id: "picture_car" %>
+    <br><br><br>
+      Preço: R$ <%= @last_car.price %> em até 48x<br>
+      Cores: <%= @last_car.color %><br>
+      Portas: <%= @last_car.door %><br>
+      Vidro elétrico:
+      <% if @last_car.glass %>
+        Sim
+      <% else %>
+        Não
+      <% end %><br>
+
+      Ar condicionado:
+      <% if @last_car.air %>
+        Sim
+      <% else %>
+        Não
+      <% end %><br>
+
+      Transmisão: <%= @last_car.transmission %><br>
+      Combustivel: <%= @last_car.fuel %>
+   </p>
+ </div>
+
+ <div id="right">
+  <h1>Promoções</h1>
+  <% @promotion_car.each do |c| %>
+    <% if c.promotion %>
+      <h3><%= "#{c.mark} - #{c.model}" %></h3>
+      <p id="info">
+        <%= image_tag "#{c.model}.png", width: "150px", id: "picture_car" %>
+        <%= c.model %> em promoção por apenas<br>
+        R$ <%= c.price %> avista ou em até 48x de <br>
+        R$ <%= value = c.price/48%><br>
+      </p><br><br><br>
+    <% end %>
+  <% end %>
+
+
+ </div>

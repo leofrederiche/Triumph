@@ -58,7 +58,7 @@
 
   <nav>
     <ul>
-      <li>Home</li>
+      <li><%= link_to "Home", root_path %></li>
       <li>Carros</li>
       <li>Informação</li>
       <li>Lojas</li>
@@ -68,6 +68,7 @@
   <div id="post">
     <%= yield %>
   </div>
+
 
   <header>
     <p>@2014 Nenhum direito reservado.</p>
