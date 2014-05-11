@@ -13,6 +13,7 @@ class CreateCars < ActiveRecord::Migration
       t.string :color
       t.boolean :air
       t.boolean :promotion
+      t.string :tipe
 
       t.timestamps
     end

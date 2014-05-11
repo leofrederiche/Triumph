@@ -5,4 +5,11 @@ class PagesController < ApplicationController
     @promotion_car = Car.all
   end
 
+  def cars
+    @cars = Car.all
+  end
+
+  def about
+
+  end
 end

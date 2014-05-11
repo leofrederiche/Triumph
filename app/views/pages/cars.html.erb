@@ -1,0 +1,69 @@
+<div id="left">
+  <h1>Sedans</h1>
+
+  <% @cars.each do |c| %>
+    <% if c.tipe == "Sedan" %>
+    <div id="cars_sales">
+      <h3><%= "#{c.mark} - #{c.model}" %></h3>
+      <p>
+        <%= image_tag "#{c.model}.png", width: "300px", id: "picture_car" %>
+        Cores: <%= c.color %><br>
+        Portas: <%= c.door %><br>
+        Vidro elétrico:
+        <% if c.glass %>
+          Sim
+        <% else %>
+          Não
+        <% end %><br>
+
+        Ar condicionado:
+        <% if c.air %>
+          Sim
+        <% else %>
+          Não
+        <% end %><br>
+
+        Transmisão: <%= c.transmission %><br>
+        Combustivel: <%= c.fuel %><br>
+        Preço: R$ <%= c.price %> em até 48x de <%= c.price / 48 %><br>
+      </p>
+    </div>
+    <% else %>
+    <% end %>
+  <% end %>
+
+</div>
+
+<div id="right">
+  <h1>Coupés</h1>
+  <% @cars.each do |c| %>
+    <% if c.tipe == "Coupe" %>
+    <div id="cars_sales">
+      <h3><%= "#{c.mark} - #{c.model}" %></h3>
+      <p>
+        <%= image_tag "#{c.model}.png", width: "300px", id: "picture_car" %>
+        Cores: <%= c.color %><br>
+        Portas: <%= c.door %><br>
+        Vidro elétrico:
+        <% if c.glass %>
+          Sim
+        <% else %>
+          Não
+        <% end %><br>
+
+        Ar condicionado:
+        <% if c.air %>
+          Sim
+        <% else %>
+          Não
+        <% end %><br>
+
+        Transmisão: <%= c.transmission %><br>
+        Combustivel: <%= c.fuel %><br>
+        Preço: R$ <%= c.price %> em até 48x de <%= c.price / 48 %><br>
+      </p>
+    </div>
+    <% else %>
+    <% end %>
+  <% end %>
+</div>

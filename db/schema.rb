@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20140507230311) do
     t.string   "color"
     t.boolean  "air"
     t.boolean  "promotion"
+    t.string   "tipe"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

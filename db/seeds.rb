@@ -18,7 +18,8 @@ fusion = Car.new(
   engine: "2.0",
   color: "Vermelho, Preto, Prata",
   air: true,
-  promotion: false
+  promotion: false,
+  tipe: "Sedan"
 )
 fusion.save
 
@@ -34,7 +35,8 @@ civic = Car.new(
   engine: "1.8",
   color: "Preto, Prata",
   air: true,
-  promotion: true
+  promotion: true,
+  tipe: "Sedan"
 )
 civic.save
 
@@ -50,6 +52,7 @@ mini = Car.new(
   engine: "1.8",
   color: "Azul, Vermelho, Prata",
   air: true,
-  promotion: true
+  promotion: true,
+  tipe: "Coupe"
 )
 mini.save
