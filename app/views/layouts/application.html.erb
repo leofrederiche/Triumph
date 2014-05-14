@@ -21,7 +21,7 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" id="first">
     <div class="item active">
       <%= image_tag "background1.jpg" %>
       <div class="carousel-caption">
@@ -63,6 +63,42 @@
       <li><%= link_to "Informações", about_path %></li>
     </ul>
   </nav>
+
+    <% if request.url == "http://localhost:3000/carros" %>
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "cars_background.jpg" %>
+        <div class="carousel-caption">
+          <h2>Tops das estradas</h2>
+          <p>Os melhores modelos, das melhores marcas.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+      #first{
+        display: none;
+      }
+    </style>
+    <% elsif request.url == "http://localhost:3000/informacao" %>
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "info_background.jpg" %>
+        <div class="carousel-caption">
+          <h2>Não há oque esconder</h2>
+          <p>Tudo oque você quiser saber, ao seu alcance.</p>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+      #first{
+        display: none;
+      }
+    </style>
+    <% end %>
+
+
 
   <div id="post">
     <%= yield %>

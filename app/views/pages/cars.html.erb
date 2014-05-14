@@ -7,7 +7,6 @@
       <h3><%= "#{c.mark} - #{c.model}" %></h3>
       <p>
         <%= image_tag "#{c.model}.png", width: "300px", id: "picture_car" %>
-        Cores: <%= c.color %><br>
         Portas: <%= c.door %><br>
         Vidro elétrico:
         <% if c.glass %>
@@ -15,17 +14,8 @@
         <% else %>
           Não
         <% end %><br>
-
-        Ar condicionado:
-        <% if c.air %>
-          Sim
-        <% else %>
-          Não
-        <% end %><br>
-
-        Transmisão: <%= c.transmission %><br>
-        Combustivel: <%= c.fuel %><br>
-        Preço: R$ <%= c.price %> em até 48x de <%= c.price / 48 %><br>
+        Preço: R$ <%= c.price %><br><br><br>
+        <%= link_to "Mais informações", car_path(c.id), :id => "more" %><br><br>
       </p>
     </div>
     <% else %>
@@ -42,7 +32,6 @@
       <h3><%= "#{c.mark} - #{c.model}" %></h3>
       <p>
         <%= image_tag "#{c.model}.png", width: "300px", id: "picture_car" %>
-        Cores: <%= c.color %><br>
         Portas: <%= c.door %><br>
         Vidro elétrico:
         <% if c.glass %>
@@ -50,17 +39,8 @@
         <% else %>
           Não
         <% end %><br>
-
-        Ar condicionado:
-        <% if c.air %>
-          Sim
-        <% else %>
-          Não
-        <% end %><br>
-
-        Transmisão: <%= c.transmission %><br>
-        Combustivel: <%= c.fuel %><br>
-        Preço: R$ <%= c.price %> em até 48x de <%= c.price / 48 %><br>
+        Preço: R$ <%= c.price %><br>
+        <%= link_to "Mais informações", car_path(c.id), :id => "more" %>
       </p>
     </div>
     <% else %>

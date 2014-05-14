@@ -12,4 +12,8 @@ class PagesController < ApplicationController
   def about
 
   end
+
+  def car
+    @car = Car.find params[:id]
+  end
 end

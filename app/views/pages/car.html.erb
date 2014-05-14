@@ -1,0 +1,50 @@
+<div id="left">
+  <%= image_tag "#{@car.model}.png", width: "300px", id: "car_info" %>
+</div>
+
+
+<div id="right">
+  <h1><%= "#{@car.mark} - #{@car.model}" %></h1>
+
+  <p>
+    Portas: <%= @car.door %>
+  </p>
+  <p>
+    Vidro elétrico:
+    <% if @car.glass %>
+      Sim
+    <% else %>
+      Não
+    <% end %>
+  </p>
+  <p>
+    Ar condicionado:
+    <% if @car.air %>
+      Sim
+    <% else %>
+      Não
+    <% end %>
+  </p>
+  <p>
+    Cores: <%= @car.color %>
+  </p>
+  <p>
+    Combustivel: <%= @car.fuel %>
+  </p>
+  <p>
+    Transmissão: <%= @car.transmission %>
+  </p>
+  <p>
+    Marchas: <%= @car.clutch %>
+  </p>
+  <p>
+    Motor: <%= @car.engine %>
+  </p>
+  <p>
+    Tipo: <%= @car.tipe %>
+  </p>
+  <h3>
+    Preço: <%= @car.price %>
+  </h3>
+
+</div>

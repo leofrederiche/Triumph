@@ -39,8 +39,7 @@
       <p id="info">
         <%= image_tag "#{c.model}.png", width: "150px", id: "picture_car" %>
         <%= c.model %> em promoção por apenas<br>
-        R$ <%= c.price %> avista ou em até 48x de <br>
-        R$ <%= value = c.price/48%><br>
+        R$ <%= c.price %> avista<br>
       </p><br><br><br>
     <% end %>
   <% end %>
